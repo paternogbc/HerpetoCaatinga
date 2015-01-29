@@ -15,20 +15,20 @@ This database contains herpetofauna species list for most of the Protected Areas
 
 1. You can Load data in Excell:  
 
-  I- Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv) to clipboard. 
-  II- Paste in Excell 
-  III- Select the colum 
-  IV- Use text-to-colum and choose comma as separator. 
+  I- Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv) to clipboard.  
+  II- Paste in Excell   
+  III- Select the colum   
+  IV- Use text-to-colum and choose comma as separator.   
 
 2.  You can also load the dataset directly to `R`:  
 
-  I. First install these packages:
+  I. First install these packages:  
 ```{r}
 install.packages("RCurl")
 install.packages("foreign")
 ```
 
-  II. Run these lines to Load data from Github
+  II. Run these lines to Load data from Github  
 
 ```{r}
 library(RCurl);library(foreign)
