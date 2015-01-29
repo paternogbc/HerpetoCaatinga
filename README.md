@@ -52,7 +52,7 @@ Dr. Adrian A. Garda
 Universidade Federal do Rio Grande do Norte, Natal, Brazil.  
 
 * Colaborators  
-Please see the [full list]() of researchers that collaborated in this Project
+Please see the [full list](https://github.com/paternogbc/HerpetoCaatinga/blob/master/team.csv) of researchers that collaborated in this Project
 
 * Founding  
 CNPQ, CAPES, UFRN, FAPERN
