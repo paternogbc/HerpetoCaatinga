@@ -45,13 +45,13 @@ When using data from this repository, pleae refer to **DOI:**
 
 ### Reserach Team:
 
-Coordinator
-Dr. Adrian A. Garda
-[Laboratório de Anfíbios e Répteis](http://larufrn.visaomagu.org/)
-Universidade Federal do Rio Grande do Norte, Natal, Brazil.
+* Coordinator  
+Dr. Adrian A. Garda  
+[Laboratório de Anfíbios e Répteis](http://larufrn.visaomagu.org/)  
+Universidade Federal do Rio Grande do Norte, Natal, Brazil.  
 
-Colaborators
+* Colaborators  
 Please see the [full list]() of researchers that collaborated in this Project
 
-Founding
+* Founding  
 CNPQ, CAPES, UFRN, FAPERN
