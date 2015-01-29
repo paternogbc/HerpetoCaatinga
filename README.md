@@ -21,14 +21,14 @@ Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/ma
 
 1. First install these packages:
 ```{r}
-install.packages("devtools")
-install.packages("Rcurl")
+install.packages("RCurl")
 install.packages("foreign")
 ```
 
 2. Load data from Github to R
 
 ```{r}
+library(RCurl);library(foreign)
 url.data <- paste("https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
 myData <- getURL(url.data,ssl.verifypeer = FALSE)
 mat <- read.csv(textConnection(myData))
