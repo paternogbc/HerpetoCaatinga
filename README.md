@@ -35,8 +35,10 @@ library(RCurl);library(foreign)
 url.data <- paste("https://raw.githubusercontent.com/paternogbc",
 "/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
 myData <- getURL(url.data,ssl.verifypeer = FALSE)
-mat <- read.csv(textConnection(myData))
+myData <- read.csv(textConnection(myData))
+# Check if data was loaded correctly:
+str(myData)
 ``` 
-### How to cite this dataser?
+### How to cite this dataset?
 
 When using data from this repository, pleae refere to **DOI:** 
