@@ -1,4 +1,4 @@
-# HerpetoCaatinga
+# Caatinga Herpetofauna **Dataset**
 This database contains herpetofauna species list for most of the Protected Areas in Caatinga, Northeast Brazil.
 
 ### Protected areas covered:
@@ -32,7 +32,8 @@ install.packages("foreign")
 
 ```{r}
 library(RCurl);library(foreign)
-url.data <- paste("https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
+url.data <- paste("https://raw.githubusercontent.com/paternogbc",
+"/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
 myData <- getURL(url.data,ssl.verifypeer = FALSE)
 mat <- read.csv(textConnection(myData))
 ``` 
