@@ -41,17 +41,17 @@ str(myData)
 ``` 
 ### How to cite this dataset?
 
-When using data from this repository, pleae refere to **DOI:** 
+When using data from this repository, pleae refer to **DOI:** 
 
 ### Reserach Team:
 
-#### Coordinator
+Coordinator
 Dr. Adrian A. Garda
 [Laboratório de Anfíbios e Répteis](http://larufrn.visaomagu.org/)
 Universidade Federal do Rio Grande do Norte, Natal, Brazil.
 
-#### Colaborators
-Please see the full list of researchers that collaborated in this Project
+Colaborators
+Please see the [full list]() of researchers that collaborated in this Project
 
-### Founding
+Founding
 CNPQ, CAPES, UFRN, FAPERN
