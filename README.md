@@ -16,7 +16,7 @@ Have a look in the [dataset](https://github.com/paternogbc/HerpetoCaatinga/blob/
 
 1. You can Load data in Excell:  
 
-  I- Download the repository on the topright (.zip for windows or .tar.gz for Linux)
+  I- Download the repository on the topright (.zip for windows or .tar.gz for Linux)  
   II- Open the "Herpeto_dataset.csv" file with Excell or Calc.
 
 2.  You can also load the dataset directly to `R`:  
@@ -50,7 +50,7 @@ Dr. Adrian A. Garda
 Universidade Federal do Rio Grande do Norte, Natal, Brazil.  
 
 * Colaborators  
-Please see the [full list](https://github.com/paternogbc/HerpetoCaatinga/blob/master/team.csv) of researchers that collaborated in this Project
+Please see the full list of [researchers]((https://github.com/paternogbc/HerpetoCaatinga/blob/master/team.csv)) that collaborated in this Project
 
 * Founding  
 CNPQ, CAPES, UFRN, FAPERN
