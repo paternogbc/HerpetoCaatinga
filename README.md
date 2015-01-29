@@ -17,10 +17,10 @@ This database contains herpetofauna species list for most of the Protected Areas
 
 Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv) to clipboard. Paste in Excell and choose to separate colum with comma (.csv). 
 
-* Load data in R:  
+* Or load data in R:  
 
 1. First install these packages:
-```
+```{r}
 install.packages("devtools")
 install.packages("Rcurl")
 install.packages("foreign")
@@ -28,7 +28,7 @@ install.packages("foreign")
 
 2. Load data from Github to R
 
-```
+```{r}
 url.data <- paste("https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
 myData <- getURL(url.data,ssl.verifypeer = FALSE)
 mat <- read.csv(textConnection(myData))
