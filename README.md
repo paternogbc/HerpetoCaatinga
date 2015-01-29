@@ -16,10 +16,8 @@ Have a look in the [dataset](https://github.com/paternogbc/HerpetoCaatinga/blob/
 
 1. You can Load data in Excell:  
 
-  I- Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv) to clipboard.  
-  II- Paste in Excell   
-  III- Select the colum   
-  IV- Go to tab data -> text-to-colum and choose comma as separator.   
+  I- Download the repository on the topright (.zip for windows or .tar.gz for Linux)
+  II- Open the "Herpeto_dataset.csv" file with Excell or Calc.
 
 2.  You can also load the dataset directly to `R`:  
 
