@@ -1,6 +1,6 @@
 # Caatinga Herpetofauna **Dataset**
 This database contains herpetofauna species list for most of the Protected Areas in Caatinga, Northeast Brazil.
-Have a look in the [dataset]().  
+Have a look in the [dataset](https://github.com/paternogbc/HerpetoCaatinga/blob/master/Herpeto_dataset.csv).  
 To download raw data, see below.
 
 ### Protected areas covered:
