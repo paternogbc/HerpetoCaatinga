@@ -19,8 +19,16 @@ Copy [Raw data]( https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/ma
 
 Load data in R:  
 
-Install the packages: devtools
-
 ```
+# First install these packages:
 install.packages("devtools")
+install.packages("Rcurl")
+install.packages("foreign")
+
+# Load data from Github to R
+url.data <- paste("https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv",sep="")
+myData <- getURL(url.data,ssl.verifypeer = FALSE)
+mat <- read.csv(textConnection(myData))
 ``` 
+
+
