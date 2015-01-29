@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Herpetocaatinga : Herpetofauna check list for Strict Protection Areas in Caatinga (Northeast Brazil)">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Herpetocaatinga</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/paternogbc/HerpetoCaatinga">View on GitHub</a>
+
+          <h1 id="project_title">Herpetocaatinga</h1>
+          <h2 id="project_tagline">Herpetofauna check list for Strict Protection Areas in Caatinga (Northeast Brazil)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/paternogbc/HerpetoCaatinga/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/paternogbc/HerpetoCaatinga/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="caatinga-herpetofauna-dataset" class="anchor" href="#caatinga-herpetofauna-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Caatinga Herpetofauna <strong>Dataset</strong>
+</h1>
+
+<p>This database contains herpetofauna species list for most of the Protected Areas in Caatinga, Northeast Brazil.<br>
+Have a look in the <a href="https://github.com/paternogbc/HerpetoCaatinga/blob/master/Herpeto_dataset.csv">dataset</a> or download raw data (see below)</p>
+
+<h3>
+<a id="protected-areas-covered" class="anchor" href="#protected-areas-covered" aria-hidden="true"><span class="octicon octicon-link"></span></a>Protected areas covered:</h3>
+
+<p>1- Estação Ecológica Raso da Catarina<br>
+2- Estação Ecológica Aiuaba<br>
+3- Estação Ecológica Seridó<br>
+4- Parque Nacional Serra da Capivara<br>
+5- Parque Nacional Serra das Confusões<br>
+6- Parque Nacional Ubajara<br>
+7- Parque Nacional Chapada Diamantina<br>
+8- Parque Nacional Catimbau  </p>
+
+<h3>
+<a id="how-to-use-this-dataset" class="anchor" href="#how-to-use-this-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use this dataset?</h3>
+
+<ol>
+<li>
+<p>You can Load data in Excell:  </p>
+
+<p>I- Copy <a href="https://raw.githubusercontent.com/paternogbc/HerpetoCaatinga/master/Herpeto_dataset.csv">Raw data</a> to clipboard.<br>
+II- Paste in Excell<br>
+III- Select the colum<br>
+IV- Go to tab data -&gt; text-to-colum and choose comma as separator.   </p>
+</li>
+<li>
+<p>You can also load the dataset directly to <code>R</code>:  </p>
+
+<p>I. First install these packages:  </p>
+</li>
+</ol>
+
+<div class="highlight highlight-r"><pre>install.packages(<span class="pl-s1"><span class="pl-pds">"</span>RCurl<span class="pl-pds">"</span></span>)
+install.packages(<span class="pl-s1"><span class="pl-pds">"</span>foreign<span class="pl-pds">"</span></span>)</pre></div>
+
+<p>II. Run these lines to Load data from Github  </p>
+
+<div class="highlight highlight-r"><pre>library(<span class="pl-vo">RCurl</span>);library(<span class="pl-vo">foreign</span>)
+<span class="pl-vo">url.data</span> <span class="pl-k">&lt;-</span> paste(<span class="pl-s1"><span class="pl-pds">"</span>https://raw.githubusercontent.com/paternogbc<span class="pl-pds">"</span></span>,
+<span class="pl-s1"><span class="pl-pds">"</span>/HerpetoCaatinga/master/Herpeto_dataset.csv<span class="pl-pds">"</span></span>,<span class="pl-v">sep</span><span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)
+<span class="pl-vo">myData</span> <span class="pl-k">&lt;-</span> getURL(<span class="pl-vo">url.data</span>,<span class="pl-v">ssl.verifypeer</span> <span class="pl-k">=</span> <span class="pl-c1">FALSE</span>)
+<span class="pl-vo">myData</span> <span class="pl-k">&lt;-</span> read.csv(textConnection(<span class="pl-vo">myData</span>))
+<span class="pl-c"># Check if data was loaded correctly:</span>
+str(<span class="pl-vo">myData</span>)</pre></div>
+
+<h3>
+<a id="how-to-cite-this-dataset" class="anchor" href="#how-to-cite-this-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to cite this dataset?</h3>
+
+<p>When using data from this repository, pleae refer to <strong>DOI:</strong> </p>
+
+<h3>
+<a id="reserach-team" class="anchor" href="#reserach-team" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reserach Team:</h3>
+
+<ul>
+<li><p>Coordinator<br>
+Dr. Adrian A. Garda<br>
+<a href="http://larufrn.visaomagu.org/">Laboratório de Anfíbios e Répteis</a><br>
+Universidade Federal do Rio Grande do Norte, Natal, Brazil.  </p></li>
+<li><p>Colaborators<br>
+Please see the <a href="https://github.com/paternogbc/HerpetoCaatinga/blob/master/team.csv">full list</a> of researchers that collaborated in this Project</p></li>
+<li><p>Founding<br>
+CNPQ, CAPES, UFRN, FAPERN</p></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Herpetocaatinga maintained by <a href="https://github.com/paternogbc">paternogbc</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
